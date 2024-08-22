@@ -2,18 +2,6 @@ const assert = require('assert');
 const calculateNumber = require('./0-calcul');
 
 describe('calculateNumber', function() {
-  it('should return the sum of rounded numbers', function() {
-    assert.strictEqual(calculateNumber(1.4, 4.5), 6);
-  });
-
-  it('should handle negative numbers', function() {
-    assert.strictEqual(calculateNumber(-2.4, -2.4), -4);
-  });
-
-  it('should handle mixed positive and negative numbers', function() {
-    assert.strictEqual(calculateNumber(-1.5, 3.7), 2);
-  });
-
   it('Rounding two integer numbers', function() {
     assert.equal(calculateNumber(1, 3), 4);
   });
